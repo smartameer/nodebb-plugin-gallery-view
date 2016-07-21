@@ -1,0 +1,26 @@
+{
+    "name": "nodebb-plugin-gallery-view",
+    "version": "0.0.1",
+    "description": "A Plugin that Shows randomly placed images in a proper carousel based modal",
+    "main": "public/js/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/smartameer/nodebb-plugin-gallery-view.git"
+    },
+    "keywords": [
+        "gallery",
+        "image",
+        "topic",
+        "modal",
+        "carousel"
+    ],
+    "author": "smartameer",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/smartameer/nodebb-plugin-gallery-view/issues"
+    },
+    "homepage": "https://github.com/smartameer/nodebb-plugin-gallery-view#readme"
+}

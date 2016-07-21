@@ -1,0 +1,15 @@
+{
+    "id": "nodebb-plugin-gallery-view",
+    "name": "Gallery View for nodebb Topics",
+    "description": "A Plugin that Shows random images in a proper carousel based box",
+    "url": "https://github.com/smartameer/nodebb-plugin-gallery-view",
+    "staticDirs": {
+      "public": "public"
+    },
+    "scripts": [
+      "public/js/main.js"
+    ],
+    "less": [
+      "public/less/main.less"
+    ]
+}
