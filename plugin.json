@@ -4,12 +4,12 @@
     "description": "A Plugin that Shows random images in a proper carousel based box",
     "url": "https://github.com/smartameer/nodebb-plugin-gallery-view",
     "staticDirs": {
-      "public": "public"
+        "public": "public"
     },
     "scripts": [
-      "public/js/main.js"
+        "public/js/main.js"
     ],
     "less": [
-      "public/less/main.less"
+        "public/less/main.less"
     ]
 }

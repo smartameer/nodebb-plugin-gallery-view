@@ -10,8 +10,11 @@
 }
 
 #gallery-carousel-modal {
+   .modal-body {
+       padding: 4px;
+   }
    #gallery-carousel {
-       max-height: 460px;
+       height: 500px;
        .item {
            width: 100%;
            max-height: 460px;
@@ -19,6 +22,22 @@
                width: auto;
                max-height: 460px;
                margin: 0 auto;
+           }
+       }
+       .carousel-control {
+           background: none;
+           span {
+              background: rgba(5, 5, 5, 0.3) none repeat scroll 0 0;
+              height: 40px;
+              line-height: 40px;
+              width: 40px;
+              margin-top: -30px;
+           }
+           &.left span {
+              left: 6px;
+           }
+           &.right span {
+              right: 6px;
            }
        }
    }
