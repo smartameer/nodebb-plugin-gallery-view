@@ -23,7 +23,7 @@
                 event.stopPropagation();
                 $('#'+modalId).modal('show').on('hidden.bs.modal', function (e) {
                     $('#'+carouselId).carousel('pause');
-                    detachEvents();
+                    //detachEvents();
                 });
 
                 $('#'+carouselId).carousel(parseInt($(this).find('img').attr('data-index')) || 0);
@@ -34,7 +34,7 @@
                 return false;
             });
             createCarousel(img);
-            attachEvents();
+            //attachEvents();
         }
     }
 
