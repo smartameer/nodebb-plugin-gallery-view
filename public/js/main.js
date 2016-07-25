@@ -19,19 +19,21 @@
                 $(this).attr('data-index', k);
             });
             img.addClass('thumbnail').parent().on('click', 'a', function(event){
-                event.preventDefault();
-                event.stopPropagation();
-                $('#'+modalId).modal('show').on('hidden.bs.modal', function (e) {
-                    $('#'+carouselId).carousel('pause');
-                    //detachEvents();
-                });
+                if ($(this).children('img').length > 0) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $('#'+modalId).modal('show').on('hidden.bs.modal', function (e) {
+                        $('#'+carouselId).carousel('pause');
+                        //detachEvents();
+                    });
 
-                $('#'+carouselId).carousel(parseInt($(this).find('img').attr('data-index')) || 0);
+                    $('#'+carouselId).carousel(parseInt($(this).find('img').attr('data-index')) || 0);
 
-                if (laststate === 0) {
-                    $('#'+carouselId).carousel('cycle');
+                    if (laststate === 0) {
+                        $('#'+carouselId).carousel('cycle');
+                    }
+                    return false;
                 }
-                return false;
             });
             createCarousel(img);
             //attachEvents();
