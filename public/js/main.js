@@ -5,11 +5,11 @@
         laststate = 1;
 
     $(window).on('action:ajaxify.end', function() {
-        setTimeout(initialize, 100);
+        setTimeout(initialize, 500);
     });
 
     $(window).on('action:topic.loaded', function() {
-        setTimeout(initialize, 100);
+        setTimeout(initialize, 500);
     });
 
     function initialize () {
@@ -18,7 +18,7 @@
             img.each(function(k) {
                 $(this).attr('data-index', k);
             });
-            img.addClass('thumbnail').parent().on('click', 'a', function(event){
+            img.addClass('thumbnail').parent().on('click', function(event){
                 if ($(this).children('img').length > 0) {
                     event.preventDefault();
                     event.stopPropagation();
@@ -43,10 +43,10 @@
     function createCarousel (elem) {
         var imgarr = $('<div></div>').addClass('carousel-inner').attr({role: 'listbox'});
         elem.each(function(key, e) {
-            var source = $(e).attr('data-src');
+            var source = $(e).attr('src');
             var item = $('<div></div>').addClass('item').append(
-                    $('<img />').prop('src', source)
-                    );
+                    $('<img></img>').prop('src', source).attr('src', source)
+            );
             if(key === 0) { item.addClass('active'); }
             imgarr.append(item);
         });
