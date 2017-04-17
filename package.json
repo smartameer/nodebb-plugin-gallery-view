@@ -1,6 +1,6 @@
 {
     "name": "nodebb-plugin-gallery-view",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A Plugin that Shows randomly placed images in a proper carousel based modal",
     "main": "public/js/main.js",
     "repository": {
